@@ -45,3 +45,32 @@ Uma API oficial para:
 - ler arquivos .class
 - gerar bytecode
 - transformar classes
+
+
+## Antes de começar
+
+A Class-File API não foi criada para substituir Reflection.
+
+Ela trabalha em um nível mais baixo.
+
+A arquitetura é mais ou menos esta:
+
+````plantuml
+                    Código Java
+                         │
+                         ▼
+                     javac
+                         │
+                         ▼
+                   Employee.class
+                         │
+                         ▼
+                 ClassFile API
+                         │
+        ┌────────────────┼────────────────┐
+        ▼                ▼                ▼
+   ClassModel      MethodModel      FieldModel
+        │                │                │
+        ▼                ▼                ▼
+  Constant Pool     Bytecode        Attributes
+````
