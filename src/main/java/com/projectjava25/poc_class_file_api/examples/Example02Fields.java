@@ -10,11 +10,7 @@ import java.nio.file.Path;
 public class Example02Fields {
 
     public static void execute() throws IOException {
-
-        System.out.println();
-        System.out.println("========================================");
         System.out.println("Example 02 - Fields");
-        System.out.println("========================================");
 
         Path classFile = Path.of(
                 "build/classes/java/main/com/project/poc_class_file_api/dto/Employee.class"
