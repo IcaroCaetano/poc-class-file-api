@@ -13,7 +13,7 @@ public class Example02Fields {
         System.out.println("Example 02 - Fields");
 
         Path classFile = Path.of(
-                "build/classes/java/main/com/project/poc_class_file_api/dto/Employee.class"
+                "build/classes/java/main/com/project/poc_class_file_api/model/Employee.class"
         );
 
         byte[] bytes = Files.readAllBytes(classFile);
