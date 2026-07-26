@@ -8,6 +8,7 @@ public class PocClassFileApiApplication {
 
 	public static void main(String[] args) {
 Example01List.execute();
+Example02Fields.execute();
 	}
 
 }
