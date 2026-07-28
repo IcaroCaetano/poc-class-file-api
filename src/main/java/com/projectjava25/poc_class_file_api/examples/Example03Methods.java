@@ -16,7 +16,7 @@ public class Example03Methods {
         System.out.println("Example 03 - Methods");
         System.out.println("========================================");
 
-        Path classFile = Path.of("build/classes/java/main/com/project/poc_class_file_api/dto/Employee.class");
+        Path classFile = Path.of("build/classes/java/main/com/projectjava25/poc_class_file_api/model/Employee.class");
 
         byte[] bytes = Files.readAllBytes(classFile);
 
