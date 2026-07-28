@@ -103,11 +103,14 @@ Pedro
 Maria
 Joao
 
-Apos adicionar 'Jose' na cole��o original:
-Original : [Joao, Maria, Pedro, Jos�]
-Reversed: [Jos�, Pedro, Maria, Joao]
+Apos adicionar 'Jose' na colecao original:
+Original : [Joao, Maria, Pedro, Jose]
+Reversed: [Jose, Pedro, Maria, Joao]
 
+========================================
 Example 02 - Fields
+========================================
+
 Fields encontrados:
 
 Nome : id
