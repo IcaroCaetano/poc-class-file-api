@@ -143,4 +143,71 @@ Descriptor.: ()Ljava/lang/String;
 Nome.......: getDepartment
 Descriptor.: ()Ljava/lang/String;
 --------------------------------
+
+========================================
+Example 04 - Bytecode
+========================================
+
+Method: <init>
+LocalVariable[name=this, slot=0, type=Lcom/projectjava25/poc_class_file_api/model/Employee;]
+Label[context=CodeModel[id=925858445], bci=0]
+LineNumber[line=9]
+Load[OP=ALOAD_0, slot=0]
+Invoke[OP=INVOKESPECIAL, m=java/lang/Object.<init>()V]
+LineNumber[line=10]
+Return[OP=RETURN]
+Label[context=CodeModel[id=925858445], bci=5]
+
+Method: <init>
+LocalVariable[name=this, slot=0, type=Lcom/projectjava25/poc_class_file_api/model/Employee;]
+LocalVariable[name=id, slot=1, type=Ljava/lang/Long;]
+LocalVariable[name=name, slot=2, type=Ljava/lang/String;]
+LocalVariable[name=department, slot=3, type=Ljava/lang/String;]
+Label[context=CodeModel[id=804564176], bci=0]
+LineNumber[line=12]
+Load[OP=ALOAD_0, slot=0]
+Invoke[OP=INVOKESPECIAL, m=java/lang/Object.<init>()V]
+LineNumber[line=13]
+Load[OP=ALOAD_0, slot=0]
+Load[OP=ALOAD_1, slot=1]
+Field[OP=PUTFIELD, field=com/projectjava25/poc_class_file_api/model/Employee.id:Ljava/lang/Long;]
+LineNumber[line=14]
+Load[OP=ALOAD_0, slot=0]
+Load[OP=ALOAD_2, slot=2]
+Field[OP=PUTFIELD, field=com/projectjava25/poc_class_file_api/model/Employee.name:Ljava/lang/String;]
+LineNumber[line=15]
+Load[OP=ALOAD_0, slot=0]
+Load[OP=ALOAD_3, slot=3]
+Field[OP=PUTFIELD, field=com/projectjava25/poc_class_file_api/model/Employee.department:Ljava/lang/String;]
+LineNumber[line=16]
+Return[OP=RETURN]
+Label[context=CodeModel[id=804564176], bci=20]
+
+Method: getId
+LocalVariable[name=this, slot=0, type=Lcom/projectjava25/poc_class_file_api/model/Employee;]
+Label[context=CodeModel[id=1421795058], bci=0]
+LineNumber[line=19]
+Load[OP=ALOAD_0, slot=0]
+Field[OP=GETFIELD, field=com/projectjava25/poc_class_file_api/model/Employee.id:Ljava/lang/Long;]
+Return[OP=ARETURN]
+Label[context=CodeModel[id=1421795058], bci=5]
+
+Method: getName
+LocalVariable[name=this, slot=0, type=Lcom/projectjava25/poc_class_file_api/model/Employee;]
+Label[context=CodeModel[id=1555009629], bci=0]
+LineNumber[line=23]
+Load[OP=ALOAD_0, slot=0]
+Field[OP=GETFIELD, field=com/projectjava25/poc_class_file_api/model/Employee.name:Ljava/lang/String;]
+Return[OP=ARETURN]
+Label[context=CodeModel[id=1555009629], bci=5]
+
+Method: getDepartment
+LocalVariable[name=this, slot=0, type=Lcom/projectjava25/poc_class_file_api/model/Employee;]
+Label[context=CodeModel[id=41359092], bci=0]
+LineNumber[line=27]
+Load[OP=ALOAD_0, slot=0]
+Field[OP=GETFIELD, field=com/projectjava25/poc_class_file_api/model/Employee.department:Ljava/lang/String;]
+Return[OP=ARETURN]
+Label[context=CodeModel[id=41359092], bci=5]
+
 ````
