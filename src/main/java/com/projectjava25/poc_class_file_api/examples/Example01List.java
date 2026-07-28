@@ -1,4 +1,4 @@
-package com.project.poc_sequenced_collections.examples;
+package com.projectjava25.poc_class_file_api.examples;
 
 import java.util.ArrayList;
 import java.util.SequencedCollection;
@@ -13,7 +13,7 @@ public class Example01List {
 
         SequencedCollection<String> developers = new ArrayList<>();
 
-        developers.add("João");
+        developers.add("Joao");
         developers.add("Maria");
         developers.add("Pedro");
 
@@ -28,7 +28,7 @@ public class Example01List {
         developers.addFirst("Carlos");
         developers.addLast("Ana");
 
-        System.out.println("\nApós addFirst() e addLast():");
+        System.out.println("\nApos addFirst() e addLast():");
         System.out.println(developers);
 
         
@@ -38,7 +38,7 @@ public class Example01List {
         System.out.println("\nremoveFirst(): " + first);
         System.out.println("removeLast(): " + last);
 
-        System.out.println("\nLista após as remoções:");
+        System.out.println("\nLista apos as remocoes:");
         System.out.println(developers);
 
         
@@ -48,7 +48,7 @@ public class Example01List {
         
 developers.addLast("José");
 
-        System.out.println("\nApós adicionar 'José' na coleção original:");
+        System.out.println("\nApos adicionar 'Jose' na coleção original:");
         System.out.println("Original : " + developers);
         System.out.println("Reversed: " + developers.reversed());
 

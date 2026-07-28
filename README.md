@@ -74,3 +74,49 @@ A arquitetura é mais ou menos esta:
         ▼                ▼                ▼
   Constant Pool     Bytecode        Attributes
 ````
+
+
+## Output
+
+````
+========================================
+Example 01 - SequencedCollection (List)
+========================================
+
+Lista inicial:
+[Joao, Maria, Pedro]
+
+getFirst(): Joao
+getLast(): Pedro
+
+Apos addFirst() e addLast():
+[Carlos, Joao, Maria, Pedro, Ana]
+
+removeFirst(): Carlos
+removeLast(): Ana
+
+Lista apos as remocoes:
+[Joao, Maria, Pedro]
+
+reversed():
+Pedro
+Maria
+Joao
+
+Apos adicionar 'Jose' na cole��o original:
+Original : [Joao, Maria, Pedro, Jos�]
+Reversed: [Jos�, Pedro, Maria, Joao]
+
+Example 02 - Fields
+Fields encontrados:
+
+Nome : id
+Tipo : Ljava/lang/Long;
+------------------------------
+Nome : name
+Tipo : Ljava/lang/String;
+------------------------------
+Nome : department
+Tipo : Ljava/lang/String;
+------------------------------
+````
