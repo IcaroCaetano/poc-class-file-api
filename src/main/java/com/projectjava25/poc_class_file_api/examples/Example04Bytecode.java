@@ -2,7 +2,6 @@ package com.projectjava25.poc_class_file_api.examples;
 
 import java.io.IOException;
 import java.lang.classfile.*;
-import java.lang.classfile.attribute.CodeAttribute;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
