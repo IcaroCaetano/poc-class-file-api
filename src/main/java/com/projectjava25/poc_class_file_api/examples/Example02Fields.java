@@ -26,8 +26,7 @@ public class Example02Fields {
 
             System.out.println("Nome : " + field.fieldName().stringValue());
 
-            System.out.println("Tipo : "
-                    + field.fieldType().stringValue());
+            System.out.println("Tipo : " + field.fieldType().stringValue());
 
             System.out.println("------------------------------");
         }
