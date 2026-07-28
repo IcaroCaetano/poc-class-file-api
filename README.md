@@ -122,4 +122,25 @@ Tipo : Ljava/lang/String;
 Nome : department
 Tipo : Ljava/lang/String;
 ------------------------------
+
+========================================
+Example 03 - Methods
+========================================
+Metodos encontrados:
+
+Nome.......: <init>
+Descriptor.: ()V
+--------------------------------
+Nome.......: <init>
+Descriptor.: (Ljava/lang/Long;Ljava/lang/String;Ljava/lang/String;)V
+--------------------------------
+Nome.......: getId
+Descriptor.: ()Ljava/lang/Long;
+--------------------------------
+Nome.......: getName
+Descriptor.: ()Ljava/lang/String;
+--------------------------------
+Nome.......: getDepartment
+Descriptor.: ()Ljava/lang/String;
+--------------------------------
 ````
