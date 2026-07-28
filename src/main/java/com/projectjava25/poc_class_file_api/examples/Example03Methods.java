@@ -26,11 +26,9 @@ public class Example03Methods {
 
         for (MethodModel method : classModel.methods()) {
 
-            System.out.println("Nome.......: "
-                    + method.methodName().stringValue());
+            System.out.println("Nome.......: " + method.methodName().stringValue());
 
-            System.out.println("Descriptor.: "
-                    + method.methodType().stringValue());
+            System.out.println("Descriptor.: " + method.methodType().stringValue());
 
             System.out.println("--------------------------------");
         }
