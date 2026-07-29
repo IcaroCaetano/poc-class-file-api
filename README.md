@@ -78,6 +78,9 @@ A arquitetura é mais ou menos esta:
 
 ## Output
 
+
+## Example 1
+
 ````
 ========================================
 Example 01 - SequencedCollection (List)
@@ -107,6 +110,10 @@ Apos adicionar 'Jose' na colecao original:
 Original : [Joao, Maria, Pedro, Jose]
 Reversed: [Jose, Pedro, Maria, Joao]
 
+````
+## Example 2
+
+````
 ========================================
 Example 02 - Fields
 ========================================
@@ -122,7 +129,11 @@ Tipo : Ljava/lang/String;
 Nome : department
 Tipo : Ljava/lang/String;
 ------------------------------
+````
 
+## Example 3
+
+````
 ========================================
 Example 03 - Methods
 ========================================
@@ -143,7 +154,11 @@ Descriptor.: ()Ljava/lang/String;
 Nome.......: getDepartment
 Descriptor.: ()Ljava/lang/String;
 --------------------------------
+`````
 
+## Example 4
+
+````
 ========================================
 Example 04 - Bytecode
 ========================================
@@ -210,4 +225,83 @@ Field[OP=GETFIELD, field=com/projectjava25/poc_class_file_api/model/Employee.dep
 Return[OP=ARETURN]
 Label[context=CodeModel[id=41359092], bci=5]
 
+````
+## Example 5
+
+````plantuml
+========================================
+Example 05 - Code Elements
+========================================
+
+----------------------------------------
+Method: <init>
+----------------------------------------
+BoundLocalVariable -> LocalVariable[name=this, slot=0, type=Lcom/projectjava25/poc_class_file_api/model/Employee;]
+LabelImpl -> Label[context=CodeModel[id=1160460865], bci=0]
+LineNumberImpl -> LineNumber[line=9]
+UnboundLoadInstruction -> Load[OP=ALOAD_0, slot=0]
+BoundInvokeInstruction -> Invoke[OP=INVOKESPECIAL, m=java/lang/Object.<init>()V]
+LineNumberImpl -> LineNumber[line=10]
+UnboundReturnInstruction -> Return[OP=RETURN]
+LabelImpl -> Label[context=CodeModel[id=1160460865], bci=5]
+
+----------------------------------------
+Method: <init>
+----------------------------------------
+BoundLocalVariable -> LocalVariable[name=this, slot=0, type=Lcom/projectjava25/poc_class_file_api/model/Employee;]
+BoundLocalVariable -> LocalVariable[name=id, slot=1, type=Ljava/lang/Long;]
+BoundLocalVariable -> LocalVariable[name=name, slot=2, type=Ljava/lang/String;]
+BoundLocalVariable -> LocalVariable[name=department, slot=3, type=Ljava/lang/String;]
+LabelImpl -> Label[context=CodeModel[id=1247233941], bci=0]
+LineNumberImpl -> LineNumber[line=12]
+UnboundLoadInstruction -> Load[OP=ALOAD_0, slot=0]
+BoundInvokeInstruction -> Invoke[OP=INVOKESPECIAL, m=java/lang/Object.<init>()V]
+LineNumberImpl -> LineNumber[line=13]
+UnboundLoadInstruction -> Load[OP=ALOAD_0, slot=0]
+UnboundLoadInstruction -> Load[OP=ALOAD_1, slot=1]
+BoundFieldInstruction -> Field[OP=PUTFIELD, field=com/projectjava25/poc_class_file_api/model/Employee.id:Ljava/lang/Long;]
+LineNumberImpl -> LineNumber[line=14]
+UnboundLoadInstruction -> Load[OP=ALOAD_0, slot=0]
+UnboundLoadInstruction -> Load[OP=ALOAD_2, slot=2]
+BoundFieldInstruction -> Field[OP=PUTFIELD, field=com/projectjava25/poc_class_file_api/model/Employee.name:Ljava/lang/String;]
+LineNumberImpl -> LineNumber[line=15]
+UnboundLoadInstruction -> Load[OP=ALOAD_0, slot=0]
+UnboundLoadInstruction -> Load[OP=ALOAD_3, slot=3]
+BoundFieldInstruction -> Field[OP=PUTFIELD, field=com/projectjava25/poc_class_file_api/model/Employee.department:Ljava/lang/String;]
+LineNumberImpl -> LineNumber[line=16]
+UnboundReturnInstruction -> Return[OP=RETURN]
+LabelImpl -> Label[context=CodeModel[id=1247233941], bci=20]
+
+----------------------------------------
+Method: getId
+----------------------------------------
+BoundLocalVariable -> LocalVariable[name=this, slot=0, type=Lcom/projectjava25/poc_class_file_api/model/Employee;]
+LabelImpl -> Label[context=CodeModel[id=258952499], bci=0]
+LineNumberImpl -> LineNumber[line=19]
+UnboundLoadInstruction -> Load[OP=ALOAD_0, slot=0]
+BoundFieldInstruction -> Field[OP=GETFIELD, field=com/projectjava25/poc_class_file_api/model/Employee.id:Ljava/lang/Long;]
+UnboundReturnInstruction -> Return[OP=ARETURN]
+LabelImpl -> Label[context=CodeModel[id=258952499], bci=5]
+
+----------------------------------------
+Method: getName
+----------------------------------------
+BoundLocalVariable -> LocalVariable[name=this, slot=0, type=Lcom/projectjava25/poc_class_file_api/model/Employee;]
+LabelImpl -> Label[context=CodeModel[id=603742814], bci=0]
+LineNumberImpl -> LineNumber[line=23]
+UnboundLoadInstruction -> Load[OP=ALOAD_0, slot=0]
+BoundFieldInstruction -> Field[OP=GETFIELD, field=com/projectjava25/poc_class_file_api/model/Employee.name:Ljava/lang/String;]
+UnboundReturnInstruction -> Return[OP=ARETURN]
+LabelImpl -> Label[context=CodeModel[id=603742814], bci=5]
+
+----------------------------------------
+Method: getDepartment
+----------------------------------------
+BoundLocalVariable -> LocalVariable[name=this, slot=0, type=Lcom/projectjava25/poc_class_file_api/model/Employee;]
+LabelImpl -> Label[context=CodeModel[id=1067040082], bci=0]
+LineNumberImpl -> LineNumber[line=27]
+UnboundLoadInstruction -> Load[OP=ALOAD_0, slot=0]
+BoundFieldInstruction -> Field[OP=GETFIELD, field=com/projectjava25/poc_class_file_api/model/Employee.department:Ljava/lang/String;]
+UnboundReturnInstruction -> Return[OP=ARETURN]
+LabelImpl -> Label[context=CodeModel[id=1067040082], bci=5]
 ````
