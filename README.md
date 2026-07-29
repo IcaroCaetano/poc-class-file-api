@@ -11,7 +11,7 @@ src
             │
             ├── Main.java
             │
-            ├── dto
+            ├── model
             │      Employee.java
             │
             ├── examples
@@ -20,8 +20,6 @@ src
             │      Example03Methods.java
             │      Example04Interfaces.java
             │      Example05Bytecode.java
-    Example06GenerateClass.java
-Example07TransformClass.java
             
 ````
 
