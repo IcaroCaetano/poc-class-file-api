@@ -18,8 +18,7 @@ public class Example05CodeElements {
         System.out.println("Example 05 - Code Elements");
         System.out.println("========================================");
 
-        Path path = Path.of(
-                "build/classes/java/main/com/projectjava25/poc_class_file_api/model/Employee.class");
+        Path path = Path.of("build/classes/java/main/com/projectjava25/poc_class_file_api/model/Employee.class");
 
         byte[] bytes = Files.readAllBytes(path);
 
@@ -34,14 +33,11 @@ public class Example05CodeElements {
 
             method.findAttribute(Attributes.code())
                     .ifPresent(code -> {
-
                         for (CodeElement element : code) {
 
-                            System.out.println(element.getClass().getSimpleName()
-                                    + " -> " + element);
+                            System.out.println(element.getClass().getSimpleName() + " -> " + element);
 
                         }
-
                     });
 
         }
